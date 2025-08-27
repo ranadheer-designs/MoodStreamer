@@ -6,7 +6,7 @@
 		"dev": "react-router dev",
 		"build": "react-router build",
 		"start": "react-router serve",
-		"vercel-build": "react-router build",
+		"vercel-build": "node vercel-build.js",
 		"typecheck": "react-router typegen && tsc --noEmit"
 	},
 	"dependencies": {
