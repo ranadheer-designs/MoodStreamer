@@ -19,7 +19,7 @@ export default defineConfig({
     host: true,
   },
   build: {
-    outDir: 'dist',
-    sourcemap: true,
+    outDir: 'build/client',
+    sourcemap: false,
   },
 });
