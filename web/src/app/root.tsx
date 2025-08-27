@@ -22,13 +22,15 @@ import {
 import './global.css';
 
 import fetch from '@/__create/fetch';
-// @ts-ignore
-import { SessionProvider } from '@auth/create/react';
+// Simple authentication context - replace with your preferred auth solution
+const SessionProvider = ({ children }: { children: React.ReactNode }) => {
+  return <>{children}</>;
+};
 import { useNavigate } from 'react-router';
 import { serializeError } from 'serialize-error';
 import { Toaster } from 'sonner';
-// @ts-ignore
-import { LoadFonts } from 'virtual:load-fonts.jsx';
+// Font loading - replace with your preferred font loading solution
+const LoadFonts = () => null;
 import { HotReloadIndicator } from '../__create/HotReload';
 import { useSandboxStore } from '../__create/hmr-sandbox-store';
 import type { Route } from './+types/root';
